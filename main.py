@@ -180,23 +180,3 @@ detec_comunitati()
 g = erdos_renyi_graph(n=60, p=0.2)
 nx.write_gml(g, 'communityDetection/generated/graph6.gml')"""
 
-
-'''
-#old code
-        for i in range(0, len(comunitati)-2):
-            #print(i)
-            for j in range(i+1, len(comunitati)-1):
-                #print(j)
-                if (connectionExists(i, j, comunitati, graph)):
-                    #print("yes")
-                    #tempNetwork = connectComunitati(i, j, cpy)
-                    q = calculateQ(graph, comunitati, i, j) # calc q if i connected i and j
-                    if (q > qMaxLocal):
-                        #print("better q")
-                        #print(tempNetwork)
-                        #save q and the network
-                        qMaxLocal = q
-                        com1tomerge=comunitati[i]
-                        com2tomerge=comunitati[j]
-                        #optimalNetworksLocal = comunitati
-    '''
